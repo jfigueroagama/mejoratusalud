@@ -25,11 +25,22 @@ describe User do
     it { should respond_to(:password_digest) }
     it { should respond_to(:password) }
     it { should respond_to(:password_confirmation) }
+    it { should respond_to(:admin) }
     it { should respond_to(:authenticate) }
     it { should respond_to(:microposts) }
     it { should respond_to(:relationships) }
     
     it { should be_valid }
+    it { should_not be_admin } #users are created as not admin
+  end
+  
+  describe "with admin attribute set to 'true'" do
+    
+    subject { @user }
+    
+    before { @user.toggle!(:admin) }
+
+    it { should be_admin }
   end
   
   describe "when name is not present" do
