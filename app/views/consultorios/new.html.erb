@@ -1,0 +1,13 @@
+<% provide(:title, 'Su Consultorio') %>
+<h1>Su Consultorio</h1>
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(@consultorio) do |f| %>
+	  <%= render 'shared/consultorio_messages' %>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+
+      <%= f.submit "Crea mi consultorio", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>

@@ -9,6 +9,10 @@ FactoryGirl.define do
       admin true
     end
   end
+  
+  factory :consultorio do
+    name "@MiBuenConsultorio"
+  end
 
   factory :micropost do
     content "Lorem ipsum"

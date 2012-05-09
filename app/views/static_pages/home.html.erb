@@ -1,14 +1,18 @@
 <% provide(:title, 'Home') %>
+
+<%= link_to image_tag("midoctor.png", alt: "Mi Buen Consultorio"), signin_path %>
+
 <div class="center hero-unit">
-  <h1>Welcome to the Sample App</h1>
-
+  <h1>Mi Buen Consultorio</h1>
   <h2>
-    This is the home page for the
-    <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
-    sample application.
+    This is the home page for
+    <a href="http://mibuenconsultorio.com/"> Mi Buen Consultorio</a>
   </h2>
-
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+  <%= link_to "Suscribirse ahora!", signup_path, class: "btn btn-large btn-primary" %>
 </div>
-
-<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
+<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+	<input type="hidden" name="cmd" value="_s-xclick">
+	<input type="hidden" name="hosted_button_id" value="2Q4WCAL6CRBHQ">
+	<input type="image" src="https://www.sandbox.paypal.com/es_XC/MX/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
+	<img alt="" border="0" src="https://www.sandbox.paypal.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+</form>

@@ -6,13 +6,13 @@ describe "Static pages" do
     
     before { visit root_path }
     
-    it "should have the h1 'Sample App'" do
-      page.should have_selector('h1', :text => 'Sample App')
+    it "should have the h1 'Mi Buen Consultorio'" do
+      page.should have_selector('h1', :text => 'Mi Buen Consultorio')
     end
 
     it "should have the title 'Home'" do
       page.should have_selector('title',
-                        :text => "Ruby on Rails Tutorial Sample App | Home")
+                        :text => "Mi Buen Consultorio | Home")
     end
   end
 
@@ -26,7 +26,7 @@ describe "Static pages" do
 
     it "should have the title 'Help'" do
       page.should have_selector('title',
-                        :text => "Ruby on Rails Tutorial Sample App | Help")
+                        :text => "Mi Buen Consultorio | Help")
     end
   end
 
@@ -40,7 +40,7 @@ describe "Static pages" do
 
     it "should have the title 'About'" do
       page.should have_selector('title',
-                        :text => "Ruby on Rails Tutorial Sample App | About")
+                        :text => "Mi Buen Consultorio | About")
     end
   end
 
@@ -54,7 +54,7 @@ describe "Static pages" do
 
     it "should have the title 'Contact'" do
       page.should have_selector('title',
-                        :text => "Ruby on Rails Tutorial Sample App | Contact")
+                        :text => "Mi Buen Consultorio | Contact")
     end
   end
 

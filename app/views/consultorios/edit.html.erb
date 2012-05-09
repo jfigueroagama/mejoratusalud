@@ -1,0 +1,15 @@
+<% provide(:title, "Actualiza tu consultorio") %> 
+<h1>Actualiza tu consultorio</h1>
+
+<div class="row">
+  <div class="span6 offset3">
+  <%= form_for(@consultorio) do |f| %>
+      <%= render 'shared/consultorio_messages', object: f.object %>
+
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+
+      <%= f.submit "Actualizar", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>
