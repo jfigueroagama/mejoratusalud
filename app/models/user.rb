@@ -23,4 +23,10 @@ class User < ActiveRecord::Base
   validates :email, presence: true, format: { with: VALID_EMAIL_REGEX }, uniqueness: true # { case_sensitive false }
   validates :password, presence: true, length: { minimum: 6 }
   validates :password_confirmation, presence: true
+  
+  def feed
+    # Full implementation later: Now, if micropost creation fails, feed is shown empty
+    # This statement ensures that the id is escaped before it is included in SQL query
+    Micropost.where("user_id=?", id)
+  end
 end
