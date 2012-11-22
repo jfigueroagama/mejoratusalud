@@ -47,7 +47,10 @@ describe User do
     
     subject { @user }
     
-    before { @user.toggle!(:admin) }
+    before do
+      @user.save!
+      @user.toggle!(:admin)
+    end
 
     it { should be_admin }
   end

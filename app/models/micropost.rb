@@ -17,6 +17,7 @@ class Micropost < ActiveRecord::Base
   validates :content, presence: true, length: { maximum: 140 }
   
   default_scope order: 'microposts.created_at DESC'
+  
   #Array of IDs of users followed by users
   def self.from_users_followed_by(user)
     #followed_ids = user.followed_ids
