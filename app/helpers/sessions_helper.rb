@@ -14,10 +14,10 @@ module SessionsHelper
     !current_user.nil?
   end
   
-# sets current_user  
-  def current_user=(user)
-    @current_user = user
-  end
+# sets current_user. This method is not used! 
+#  def current_user=(user)
+#    @current_user = user
+#  end
 # gets current_user  
   def current_user
     @current_user ||= User.find(session[:remember_token]) unless session[:remember_token].nil?

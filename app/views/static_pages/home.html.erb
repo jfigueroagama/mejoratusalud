@@ -29,15 +29,22 @@
 	</div>
 </div>
 <% else %>
-<%= link_to image_tag("midoctor.png", alt: "Mi Buen Consultorio"), signin_path %>
+<%= link_to image_tag("midoctor.png", alt: "Mejorando tu salud"), signin_path %>
 <div class="center hero-unit">
   <h1>Mi Buen Consultorio</h1>
+  <br />
+  <video controls with="380" height="260">
+  	<source src="railsvideo.mp4" />
+  	<source src="railsvideo.webm" />
+  </video>
+  <br />
   <h2>
     This is the home page for
     <a href="http://mibuenconsultorio.com/"> Mi Buen Consultorio</a>
   </h2>
   <%= link_to "Suscribirse ahora!", signup_path, class: "btn btn-large btn-primary" %>
 </div>
+<!--
 <br />
 <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
 	<input type="hidden" name="cmd" value="_s-xclick">
@@ -45,4 +52,5 @@
 	<input type="image" src="https://www.sandbox.paypal.com/es_XC/MX/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
 	<img alt="" border="0" src="https://www.sandbox.paypal.com/es_XC/i/scr/pixel.gif" width="1" height="1">
 </form>
+-->
 <% end %>
