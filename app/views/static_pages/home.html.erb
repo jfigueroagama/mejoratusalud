@@ -29,18 +29,21 @@
 	</div>
 </div>
 <% else %>
-<%= link_to image_tag("midoctor.png", alt: "Mejorando tu salud"), signin_path %>
+<%= link_to image_tag("belage.png", alt: "Mejorando tu salud"), signin_path %>
 <div class="center hero-unit">
-  <h1>Mi Buen Consultorio</h1>
+  <h1>Mejora tu salud!</h1>
   <br />
   <video controls with="380" height="260">
-  	<source src="railsvideo.mp4" />
-  	<source src="railsvideo.webm" />
+  	<source src="BELAGE.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>
+  	<source src="BELAGE.webm" type='video/webm; codecs="vp8, vorbis"' />
+  	<source src="BELAGE.ogv" type='video/ogg; codecs="theora, vorbis"' />
   </video>
   <br />
+  	Descarga el video <a href="BELAGE.webm">aqui</a>
+  <br />
   <h2>
-    This is the home page for
-    <a href="http://mibuenconsultorio.com/"> Mi Buen Consultorio</a>
+    Este es el sitio que te ayudara a
+    <a href="https://www.facebook.com/pages/Mejorandotusalud/542349175786786/"> Mejorar tu salud</a>
   </h2>
   <%= link_to "Suscribirse ahora!", signup_path, class: "btn btn-large btn-primary" %>
 </div>

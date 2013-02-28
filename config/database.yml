@@ -5,7 +5,7 @@
 #   gem 'sqlite3'
 development:
   adapter: postgresql
-  database: dev_sample_app2
+  database: dev_mejoratusalud
   host: localhost
   pool: 5
   timeout: 5000
@@ -17,7 +17,7 @@ development:
 # Do not set this db to the same as development or production.
 test: &test
   adapter: postgresql
-  database: test_sample_app2
+  database: test_mejoratusalud
   host: localhost
   pool: 5
   timeout: 5000
@@ -26,7 +26,7 @@ test: &test
 
 production:
   adapter: postgresql
-  database: prod_sample_app2
+  database: prod_mejoratusalud
   pool: 5
   timeout: 5000
   username: postgres

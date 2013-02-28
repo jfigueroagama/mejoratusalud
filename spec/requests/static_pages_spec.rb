@@ -6,8 +6,8 @@ describe "Static pages" do
     
     before { visit root_path }
     
-    it "should have the h1 'Mi Buen Consultorio'" do
-      page.should have_selector('h1', :text => 'Mi Buen Consultorio')
+    it "should have the h1 'Mejora tu salud'" do
+      page.should have_selector('h1', :text => 'Mejora tu salud')
     end
 
     it "should have the title 'Home'" do
