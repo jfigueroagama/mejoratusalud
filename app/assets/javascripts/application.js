@@ -12,5 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require videojs
 //= require bootstrap
 //= require_tree .
