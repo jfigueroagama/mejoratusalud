@@ -29,7 +29,8 @@ html {
 }
 
 body {
-  padding-top: 60px;
+  padding-top: 40px;
+  background-color: #888888;
 }
 
 section {
@@ -45,6 +46,13 @@ textarea {
   h1 {
     margin-bottom: 10px;
   }
+}
+
+.navbar-inner {
+  background-color: #000; /* background color will be black for all browsers */
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
 }
 
 /* typography */
@@ -80,7 +88,7 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: black;
+  color: white;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
@@ -99,7 +107,7 @@ footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid $grayMediumLight;
-  color: $grayLight;
+  color: $grayDarker;
   a {
     color: $gray; /* variable provided by bootstrap */
     &:hover { 
@@ -155,7 +163,7 @@ aside {
     float: left;
     padding: 0 10px;
     border-left: 1px solid $grayLighter;
-    color: gray;
+    color: white;
     &:first-child {
       padding-left: 0;
       border: 0;
