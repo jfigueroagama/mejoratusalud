@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.12'
+gem 'rails', '3.2.13'
 gem 'bootstrap-sass', '~> 2.2.2.0'
 gem 'bcrypt-ruby', '3.0.1'
 gem 'will_paginate', '3.0.3'
@@ -8,7 +8,8 @@ gem 'bootstrap-will_paginate', '0.0.5'
 gem 'sunspot_rails', '~> 1.3.3'
 gem 'sunspot_solr', '~> 1.3.3'
 gem 'pg', '~> 0.14.1'
-gem 'mediaelement_rails', '~> 0.5.0'
+#gem 'mediaelement_rails', '~> 0.5.0'
+gem 'rambling-slider-rails', '~> 0.1.1'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -28,7 +29,7 @@ group :assets do
   gem 'uglifier', '1.0.3'
 end
 
-gem 'jquery-rails', '1.0.18'
+gem 'jquery-rails', '2.0.3'
 
 group :test do
   gem 'capybara', '1.1.2'

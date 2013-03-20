@@ -11,7 +11,7 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+//= require jquery.rambling.slider
 //= require jquery_ujs
 //= require bootstrap
-//= require mediaelement_rails
 //= require_tree .

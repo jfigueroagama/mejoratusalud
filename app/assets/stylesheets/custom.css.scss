@@ -55,6 +55,28 @@ textarea {
   filter: none;
 }
 
+.btn-custom { 
+  background-color: hsl(110, 56%, 16%) !important; 
+  background-repeat: repeat-x; 
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#398f28", endColorstr="#193f11"); 
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#398f28), to(#193f11)); 
+  background-image: -moz-linear-gradient(top, #398f28, #193f11); 
+  background-image: -ms-linear-gradient(top, #398f28, #193f11); 
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #398f28), color-stop(100%, #193f11)); 
+  background-image: -webkit-linear-gradient(top, #398f28, #193f11); 
+  background-image: -o-linear-gradient(top, #398f28, #193f11); 
+  background-image: linear-gradient(#398f28, #193f11); 
+  border-color: #193f11 #193f11 hsl(110, 56%, 11%); 
+  color: #fff !important; 
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33); 
+  -webkit-font-smoothing: antialiased; 
+  }
+  
+.navbar .nav > li > a {
+  color: #66ffff;
+}
+
+
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
@@ -88,14 +110,14 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: white;
+  color: #66ffff;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
   &:hover {
-    color: white;
+    color: $grayLight;
     text-decoration: none;
   }
 }
@@ -109,7 +131,7 @@ footer {
   border-top: 1px solid $grayMediumLight;
   color: $grayDarker;
   a {
-    color: $gray; /* variable provided by bootstrap */
+    color: $white; /* variable provided by bootstrap */
     &:hover { 
       color: $grayDarker;
     }
