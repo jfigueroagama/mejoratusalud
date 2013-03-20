@@ -3,10 +3,8 @@
   <head>
   	<meta charset="UTF-8" />
     <title><%= full_title(yield(:title)) %></title>
-    <%= stylesheet_link_tag    "application", media: "all" %>
-    <%= javascript_include_tag "application" %>
-    <%= stylesheet_link_tag 'jquery.rambling.slider' %>
-	<%= javascript_include_tag 'jquery.rambling.slider' %>
+    <%= stylesheet_link_tag    "application", "jquery.rambling.slider", media: "all" %>
+    <%= javascript_include_tag "application", "jquery.rambling.slider" %>
     <%= csrf_meta_tags %>
     <%= render 'layouts/shim' %>
   </head>
